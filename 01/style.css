@@ -79,8 +79,7 @@ body {
           transform: scale(2);
 }
 
-.form__input,
-.form .btn {
+.form__input, .form__btn {
   font-size: 18px;
   border: none;
   margin: 10px 0;
@@ -88,7 +87,7 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
-.btn {
+.form__btn {
   padding: 10px 40px;
   color: #fff;
   background-color: #ffce3b;
@@ -101,13 +100,9 @@ body {
   transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
-.btn:hover {
+.form__btn:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   opacity: 0.8;
-}
-
-.blue {
-  color: #00c0ff;
 }
 /*# sourceMappingURL=style.css.map */
