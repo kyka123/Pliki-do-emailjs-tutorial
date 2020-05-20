@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #00c0ff;
+  background-image: url("./hero.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Nunito", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+.form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px;
+  border-radius: 20px;
+  background-color: #fff;
+  border-top: 10px solid #ffce3b;
+}
+
+.form__input {
+  background-color: #eee;
+  resize: none;
+  padding: 15px 30px;
+  width: 340px;
+}
+
+.form__input--textarea {
+  height: 150px;
+}
+
+.form__title {
+  font-weight: 800;
+  position: relative;
+  z-index: 2;
+}
+
+.form__title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  opacity: .1;
+  background-color: #00c0ff;
+  z-index: -1;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.form__input,
+.form .btn {
+  font-size: 18px;
+  border: none;
+  margin: 10px 0;
+  border-radius: 30px;
+  font-family: "Nunito", sans-serif;
+}
+
+.btn {
+  padding: 10px 40px;
+  color: #fff;
+  background-color: #ffce3b;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.blue {
+  color: #00c0ff;
+}
+/*# sourceMappingURL=style.css.map */
