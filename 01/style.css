@@ -15,7 +15,7 @@ body {
           justify-content: center;
   width: 100vw;
   height: 100vh;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 *,
@@ -47,6 +47,36 @@ body {
   border-top: 10px solid #ffce3b;
 }
 
+.form__title {
+  font-weight: 800;
+  position: relative;
+  z-index: 2;
+  cursor: default;
+}
+
+.form__title::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -35px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  opacity: 0.1;
+  background-color: #00c0ff;
+  z-index: -1;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.form__title:hover::before {
+  opacity: 0.5;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
 .form__input {
   background-color: #eee;
   resize: none;
@@ -58,33 +88,12 @@ body {
   height: 150px;
 }
 
-.form__title {
-  font-weight: 800;
-  position: relative;
-  z-index: 2;
-}
-
-.form__title::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -10px;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  opacity: .1;
-  background-color: #00c0ff;
-  z-index: -1;
-  -webkit-transform: scale(2);
-          transform: scale(2);
-}
-
 .form__input, .form__btn {
   font-size: 18px;
   border: none;
   margin: 10px 0;
   border-radius: 30px;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .form__btn {
