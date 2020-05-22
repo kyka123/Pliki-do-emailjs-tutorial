@@ -24,7 +24,7 @@ function validate(name, email, question) {
     return true
 }
 
-function sendEmail(params) {
+zfunction sendEmail(params) {
     const service = 'gmail'
     const templateId = 'zapytanie_z_formularza'
     const user_id = 'user_7UmOln4rmGnWztCUbINrT'

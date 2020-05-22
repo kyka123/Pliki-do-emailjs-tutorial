@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Zadaj mi pytanie</title>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="./style.css" />
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-    </head>
 
-    <body>
-        <form id="form" class="form">
-            <h1 class="form__title">Zadaj mi pytanie</h1>
-            <input type="text" name="name" id="name" class="form__input" placeholder="name" />
-            <input type="email" name="email" id="email" class="form__input" placeholder="email" />
-            <textarea name="question" id="question" class="form__input form__input--textarea" placeholder="question"></textarea>
-            <button id="submit" name="submit" type="submit" class="form__btn">Wyślij</button>
-        </form>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadaj mi pytanie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+</head>
 
-        <script src="./app.js"></script>
-    </body>
+<body>
+    <form id="form" class="form">
+        <h1 class="form__title">Zadaj mi pytanie</h1>
+        <input type="text" name="name" id="name" class="form__input" placeholder="name" />
+        <input type="email" name="email" id="email" class="form__input" placeholder="email" />
+        <textarea name="question" id="question" class="form__input form__input--textarea"
+            placeholder="question"></textarea>
+        <button id="submit" name="submit" type="submit" class="form__btn">Wyślij</button>
+    </form>
+
+    <script src="./app.js"></script>
+</body>
+
 </html>
